@@ -23,7 +23,7 @@ labels = ['glioma_tumor', 'meningioma_tumor', 'no_tumor', 'pituitary_tumor']
 absolute_path = os.path.dirname(__file__)
 
 for i in labels:
-    datapath = os.path.join(absolute_path, 'data/', i)
+    datapath = os.path.join(absolute_path, 'Data/', i)
     for j in os.listdir(datapath):
         mri = cv2.imread(os.path.join(datapath, j))
         mri = cv2.resize(mri, (150, 150))
