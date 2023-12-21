@@ -47,6 +47,8 @@ The ResNet50 model achieved a solid validation accuracy of **90.14%**. See below
 | **macro avg**    | 0.90      | 0.90   | 0.90     | 327     |
 | **weighted avg** | 0.90      | 0.90   | 0.90     | 327     |
 
+![resnet](https://github.com/sayujshah/Brain_Tumor_MRI_Classification/assets/64810038/e584f46b-e6d6-45ce-8d17-f042a488c369)
+
 ### EfficientNetB0
 
 The EfficientNetB0 performed much better with a validation accuracy of **94.22%**! See below for the classification report and accuracy-per-epoch chart:
@@ -65,13 +67,25 @@ The EfficientNetB0 performed much better with a validation accuracy of **94.22%*
 | **macro avg**    | 0.92      | 0.93   | 0.92     | 327     |
 | **weighted avg** | 0.92      | 0.92   | 0.92     | 327     |
 
-Both models were not particularly great when classifying meningioma tumors. However, the EfficientNetB0 model was much better at avoiding false positives.
+![effnet](https://github.com/sayujshah/Brain_Tumor_MRI_Classification/assets/64810038/a3a870b4-522a-4bcf-af14-426d5b7a2169)
 
-You can train these models yourself and compare results by running the files found in the **Model Training** folder. Feel free to make some tweaks to improve performance!
+Both models were not particularly great when classifying meningioma tumors. However, the EfficientNetB0 model was much better at avoiding false positives. You can train these models yourself and compare results by running the files found in the **Model Training** folder. Feel free to make some tweaks to improve performance!
 
 ## Brain_Tumor_MRI_Classification.py
 
-This is the main file. If you just want to see the classification model in action, run this file. Once run, a webpage will open prompting you to upload your own MRI scan. Once you upload the scan, click "Submit" and watch the model provide its best guess as to what type of tumor (if any) is present in the scan. I chose to use the EfficientNetB0 model as it performed the best during my training, however you can edit the file to import your own custom model. Experiment with your own models and provide feedback with the the buttons below the output.
+This is the main file. If you just want to see the classification model in action, run this file. Once run, a webpage will open prompting you to upload your own MRI scan.
+
+![mri_demo1](https://github.com/sayujshah/Brain_Tumor_MRI_Classification/assets/64810038/9d55c9d2-5e13-4167-8526-d9692425bc13)
+
+For this demo, I found a novel image of an MRI scan of a pituitary tumor that the model was *not* trained on. Go ahead and upload any MRI scan you have an observe the results.
+
+![mri_demo2](https://github.com/sayujshah/Brain_Tumor_MRI_Classification/assets/64810038/6626c455-d4cc-43c6-9f85-c04ad2d46947)
+
+Once you upload the scan, click "Submit" and watch the model provide its best guess as to what type of tumor (if any) is present in the scan. We see that the model correctly predicted that my scan contained a pituitary tumor!
+
+![mri_demo3](https://github.com/sayujshah/Brain_Tumor_MRI_Classification/assets/64810038/878b0bce-4102-4039-b094-8392ffb47a6d)
+
+I chose to use the EfficientNetB0 model as it performed the best during my training, however you can edit the file to import your own custom model. Experiment with your own models and provide feedback with the buttons below the output.
 
 [^1]: “Brain Tumor: Statistics.” *Cancer.Net*, 31 May 2023, www.cancer.net/cancer-types/brain-tumor/statistics: :text=A%20person’s%20likelihood%20of
 %20developing,nervous%20system%20(CNS)%20tumors.
