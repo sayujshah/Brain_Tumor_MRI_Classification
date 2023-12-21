@@ -8,7 +8,7 @@ from keras.models import load_model
 def import_model(model_name):
     # Set aboslute path
     absolute_path = os.path.dirname(__file__)
-    model_path = os.path.join(absolute_path, model_name)
+    model_path = os.path.join(absolute_path, 'Pre-Trained Models/', model_name)
     model = load_model(model_path)
 
     return model
