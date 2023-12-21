@@ -33,39 +33,37 @@ I trained various models ranging from a custom CNN model, decision tree, random 
 
 The ResNet50 model achieved a solid validation accuracy of **90.14%**. See below for the classification report and accuracy-per-epoch chart:
 
-**Validation Accuracy:** 90.14%
-**MSE:** 0.1682
+**Validation Accuracy:** 90.14%\
+**MSE:** 0.1682\
 **R^2:** 0.8833
 
-|              | precision | recall | f1-score | support |
+|              | **precision** | **recall** | **f1-score** | **support** |
 | ------------ | --------- | ------ | -------- | ------- |
 | 0            | 0.87      | 0.86   | 0.87     | 103     |
 | 1            | 0.84      | 0.82   | 0.83     | 90      |
 | 2            | 0.93      | 0.93   | 0.93     | 40      |
 | 3            | 0.96      | 0.99   | 0.97     | 94      |
-| ------------ | --------- | ------ | -------- | ------- |
-| accuracy     |           |        | 0.90     | 327     |
-| macro avg    | 0.90      | 0.90   | 0.90     | 327     |
-| weighted avg | 0.90      | 0.90   | 0.90     | 327     |
+| **accuracy**     |           |        | 0.90     | 327     |
+| **macro avg**    | 0.90      | 0.90   | 0.90     | 327     |
+| **weighted avg** | 0.90      | 0.90   | 0.90     | 327     |
 
 ### EfficientNetB0
 
 The EfficientNetB0 performed much better with a validation accuracy of **94.22%**! See below for the classification report and accuracy-per-epoch chart:
 
-**Validation Accuracy:** 94.22%
-**MSE:** 0.1284
+**Validation Accuracy:** 94.22%\
+**MSE:** 0.1284\
 **R^2:** 0.9102
 
-|              | precision | recall | f1-score | support |
+|              | **precision** | **recall** | **f1-score** | **support** |
 | ------------ | --------- | ------ | -------- | ------- |
 | 0            | 0.93      | 0.89   | 0.91     | 99      |
 | 1            | 0.88      | 0.86   | 0.87     | 85      |
 | 2            | 0.92      | 0.96   | 0.94     | 48      |
 | 3            | 0.96      | 1.00   | 0.98     | 95      |
-| ------------ | --------- | ------ | -------- | ------- |
-| accuracy     |           |        | 0.92     | 327     |
-| macro avg    | 0.92      | 0.93   | 0.92     | 327     |
-| weighted avg | 0.92      | 0.92   | 0.92     | 327     |
+| **accuracy**     |           |        | 0.92     | 327     |
+| **macro avg**    | 0.92      | 0.93   | 0.92     | 327     |
+| **weighted avg** | 0.92      | 0.92   | 0.92     | 327     |
 
 Both models were not particularly great when classifying meningioma tumors. However, the EfficientNetB0 model was much better at avoiding false positives.
 
